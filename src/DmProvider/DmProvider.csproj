@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>DmProvider</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
@@ -13,8 +13,8 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/dmdbms/DmProvider</PackageProjectUrl>
     <RepositoryUrl>https://github.com/dmdbms/DmProvider</RepositoryUrl>
-    <Description>DM .NET PROVIDER</Description>
-    <Version>1.1.0</Version>
+    <Description>DmProvider is an ADO.NET data provider for DaMeng(DM).</Description>
+    <Version>1.1.1</Version>
     <PackageId>dmdbms.$(AssemblyName)</PackageId>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
