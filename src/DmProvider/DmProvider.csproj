@@ -17,12 +17,17 @@
     <Version>1.1.1</Version>
     <PackageId>dmdbms.$(AssemblyName)</PackageId>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>logo.png</PackageIcon>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Dm\ReservedWords.txt" />
     <EmbeddedResource Include="Dm\ReservedWords.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
