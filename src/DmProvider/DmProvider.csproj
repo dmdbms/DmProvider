@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>DmProvider</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>Preview</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/dmdbms/DmProvider</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dmdbms/DmProvider</RepositoryUrl>
+    <Description>DM .NET PROVIDER</Description>
+    <Version>1.1.0-preview.1</Version>
+    <PackageId>dmdbms.$(AssemblyName)</PackageId>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Dm\ReservedWords.txt" />
+    <EmbeddedResource Include="Dm\ReservedWords.txt" />
+  </ItemGroup>
+  <ItemGroup />
+</Project>
