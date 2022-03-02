@@ -1,6 +1,6 @@
 # DmProvider
-DmProvider is an ADO.NET data provider for DaMeng(DM).
 [![NuGet Version](http://img.shields.io/nuget/v/dmdbms.DmProvider.svg?style=flat)](https://www.nuget.org/packages/dmdbms.DmProvider/)
+DmProvider is an ADO.NET data provider for DaMeng(DM).
 
 ## How to Use
 
@@ -16,7 +16,7 @@ var builder = new DmConnectionStringBuilder
 };
 
 // open a connection asynchronously
-using var connection = new MdConnection(builder.ConnectionString);
+using var connection = new DmConnection(builder.ConnectionString);
 connection.Open();
 
 // create a DB command and set the SQL statement with parameters
