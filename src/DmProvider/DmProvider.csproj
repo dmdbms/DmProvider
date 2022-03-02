@@ -14,12 +14,18 @@
     <PackageProjectUrl>https://github.com/dmdbms/DmProvider</PackageProjectUrl>
     <RepositoryUrl>https://github.com/dmdbms/DmProvider</RepositoryUrl>
     <Description>DM .NET PROVIDER</Description>
-    <Version>1.1.0-preview.1</Version>
+    <Version>1.1.0</Version>
     <PackageId>dmdbms.$(AssemblyName)</PackageId>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Dm\ReservedWords.txt" />
     <EmbeddedResource Include="Dm\ReservedWords.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 </Project>
