@@ -1,14 +1,12 @@
-# DmProvider
-[![NuGet Version](http://img.shields.io/nuget/v/dmdbms.DmProvider.svg?style=flat)](https://www.nuget.org/packages/dmdbms.DmProvider/)
-DmProvider is an ADO.NET data provider for DaMeng(DM).
-ÊÊÓÃÓÚ´ïÃÎÊı¾İ¿âµÄADO.NETÊı¾İÌá¹©³ÌĞò
+# DmProvider [![NuGet Version](http://img.shields.io/nuget/v/dmdbms.DmProvider.svg?style=flat)](https://www.nuget.org/packages/dmdbms.DmProvider/)
 
-## How to Use
-## Ê¹ÓÃ·½·¨
+* DmProvider is an ADO.NET data provider for DaMeng(DM).
+* é€‚ç”¨äºè¾¾æ¢¦æ•°æ®åº“çš„ADO.NETæ•°æ®æä¾›ç¨‹åº
 
+## How to Use - ä½¿ç”¨æ–¹æ³•
 ```csharp
 // set these values correctly for your database server
-// ¸ù¾İÊµ¼ÊÇé¿öÉèÖÃ²ÎÊıµÄÖµ
+// æ ¹æ®å®é™…æƒ…å†µè®¾ç½®å‚æ•°çš„å€¼
 var builder = new DmConnectionStringBuilder
 {
     Server = "your-server",
@@ -19,18 +17,18 @@ var builder = new DmConnectionStringBuilder
 };
 
 // open a connection
-// ´ò¿ªÁ¬½Ó
+// æ‰“å¼€è¿æ¥
 using var connection = new DmConnection(builder.ConnectionString);
 connection.Open();
 
 // create a DB command and set the SQL statement with parameters
-// ´´½¨Ò»¸öÊı¾İ¿âÃüÁî¶ÔÏó²¢ÉèÖÃ²ÎÊı
+// åˆ›å»ºä¸€ä¸ªæ•°æ®åº“å‘½ä»¤å¯¹è±¡å¹¶è®¾ç½®å‚æ•°
 using var command = connection.CreateCommand();
 command.CommandText = @"SELECT * FROM orders WHERE order_id = @OrderId;";
 command.Parameters.AddWithValue("@OrderId", orderId);
 
 // execute the command and read the results
-// Ö´ĞĞSQLÃüÁî²¢¶ÁÈ¡½á¹û
+// æ‰§è¡ŒSQLå‘½ä»¤å¹¶è¯»å–ç»“æœ
 using var reader = command.ExecuteReader();
 while (reader.Read())
 {
@@ -40,11 +38,10 @@ while (reader.Read())
 }
 ```
 
-## Main Types
-## Ö÷ÒªÀàĞÍ
+## Main Types - ä¸»è¦ç±»å‹
 
 The main types provided by this library are:
-´Ë³ÌĞò¿âÌá¹©ÁËÕâĞ©Ö÷ÒªÀàĞÍ:
+æ­¤ç¨‹åºåº“æä¾›äº†è¿™äº›ä¸»è¦ç±»å‹:
 
 * `DmConnection` (implementation of `DbConnection`)
 * `DmCommand` (implementation of `DbCommand`)
@@ -56,7 +53,6 @@ The main types provided by this library are:
 * `DmException`
 * `DmTransaction` (implementation of `DbTransaction`)
 
-## Related Packages
-## Ïà¹Ø°ü
+## Related Packages - ç›¸å…³åŒ…
 
 * Entity Framework Core: [dmdbms.Microsoft.EntityFrameworkCore.Dm](https://www.nuget.org/packages/dmdbms.Microsoft.EntityFrameworkCore.Dm/)
