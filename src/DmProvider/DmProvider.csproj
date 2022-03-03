@@ -13,7 +13,8 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/dmdbms/DmProvider</PackageProjectUrl>
     <RepositoryUrl>https://github.com/dmdbms/DmProvider</RepositoryUrl>
-    <Description>DmProvider is an ADO.NET data provider for DaMeng(DM).</Description>
+    <Description>DmProvider is an ADO.NET data provider for DaMeng(DM).
+适用于达梦数据库的ADO.NET数据提供程序</Description>
     <Version>1.1.1</Version>
     <PackageId>dmdbms.$(AssemblyName)</PackageId>
     <PackageReadmeFile>README.md</PackageReadmeFile>
