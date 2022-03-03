@@ -244,14 +244,5 @@ namespace Dm.util
 			}
 			return result;
 		}
-
-		public static void Main(string[] args)
-		{
-			sbyte[] bytes = new sbyte[8];
-			setLong(bytes, 0, -128L);
-			Console.WriteLine(getLong(bytes, 0));
-			setUB4(bytes, 0, 4294967295L);
-			Console.WriteLine(getUB4(bytes, 0));
-		}
 	}
 }

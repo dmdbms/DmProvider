@@ -95,7 +95,6 @@ namespace Dm
 					{
 						dataRow["FILLFACTOR"] = Convert.ToInt32(obj);
 					}
-					Console.WriteLine(dataRow["FILLFACTOR"]);
 					obj = dmDataReader.do_GetValue(4);
 					if (obj == DBNull.Value)
 					{
@@ -105,7 +104,6 @@ namespace Dm
 					{
 						dataRow["SPACE_LIMIT"] = Convert.ToInt32(obj);
 					}
-					Console.WriteLine(dataRow["SPACE_LIMIT"]);
 					obj = dmDataReader.do_GetValue(5);
 					if (obj == DBNull.Value)
 					{
@@ -115,7 +113,6 @@ namespace Dm
 					{
 						dataRow["ROW_COUNT"] = Convert.ToInt64(obj);
 					}
-					Console.WriteLine(dataRow["ROW_COUNT"]);
 					dataTable.Rows.Add(dataRow);
 				}
 			}

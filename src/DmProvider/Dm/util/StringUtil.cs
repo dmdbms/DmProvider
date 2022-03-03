@@ -1691,10 +1691,5 @@ namespace Dm.util
 				return new sbyte[0];
 			}
 		}
-
-		public static void Main(string[] args)
-		{
-			Console.Write(lex("call \"(\"(@param_1, @param_2);", ignoreLineSeparator: true, ignoreComment: true, ltWithQuote: true));
-		}
 	}
 }

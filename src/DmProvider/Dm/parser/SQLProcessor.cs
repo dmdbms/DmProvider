@@ -305,9 +305,5 @@ namespace Dm.parser
 			}
 			return false;
 		}
-
-		public static void Main(string[] args)
-		{
-		}
 	}
 }
