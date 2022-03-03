@@ -18,6 +18,8 @@
     <PackageId>dmdbms.$(AssemblyName)</PackageId>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>logo.png</PackageIcon>
+    <PackageTags>DM8;DaMeng;达梦;达梦数据库;ADO.NET</PackageTags>
+    <Authors>dmdbms</Authors>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Dm\ReservedWords.txt" />
