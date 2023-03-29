@@ -1,3 +1,5 @@
+## 提示：此代码仓库不是由达梦公司维护，如果有Pull request，欢迎提交。如果需要技术支持，请联系达梦公司。
+
 # DmProvider [![NuGet Version](http://img.shields.io/nuget/v/dmdbms.DmProvider.svg?style=flat)](https://www.nuget.org/packages/dmdbms.DmProvider/)
 
 * DmProvider is an ADO.NET data provider for DaMeng(DM).
