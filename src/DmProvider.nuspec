@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>dmdbms.DmProvider</id>
-    <version>1.1.0.20739</version>
+    <version>8.3.1.31267</version>
     <authors>dmdbms</authors>
     <owners></owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -20,18 +20,19 @@
       </group>
       <group targetFramework=".NETCoreApp3.1">
         <dependency id="System.Text.Encoding.CodePages" version="5.0.0" exclude="Build,Analyzers" />
-        <dependency id="skyapm.agent.aspnetcore" version="2.1.0" exclude="Build,Analyzers" />
       </group>
       <group targetFramework="net5.0">
         <dependency id="System.Text.Encoding.CodePages" version="5.0.0" exclude="Build,Analyzers" />
       </group>
       <group targetFramework="net6.0" />
+      <group targetFramework="net7.0" />
+      <group targetFramework="net8.0" />
       <group targetFramework=".NETStandard2.0">
         <dependency id="System.Text.Encoding.CodePages" version="5.0.0" exclude="Build,Analyzers" />
       </group>
     </dependencies>
     <frameworkAssemblies>
-      <frameworkAssembly assemblyName="System.Transactions.dll" targetFramework=".NETFramework4.00.0" />
+      <frameworkAssembly assemblyName="System.Transactions.dll" targetFramework=".NETFramework4.0, .NETFramework4.5" />
     </frameworkAssemblies>
   </metadata>
 </package>
